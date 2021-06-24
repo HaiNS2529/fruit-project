@@ -1,0 +1,28 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.form_login{
+    position: absolute;
+    top: 30vh;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    background-color: #fffaf0c9;
+    padding: 30px;
+    text-align: center;
+    justify-content: center;
+    width: 450px;
+    height: 350px;
+    border-radius: 20px;
+}
+.background-login{
+    background-image: url("@assets/images/background-login.jpg");
+    width: 100vw;
+    height: 100vh;
+}
+.btn-login{
+    margin-top: 20px;
+    
+}

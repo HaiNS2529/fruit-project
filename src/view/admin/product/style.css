@@ -1,0 +1,14 @@
+.product_detail .ant-modal-content{
+    width: 50vw;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-top: -60px;
+}
+
+td.ant-descriptions-item-content.product_image {
+    padding-left: 5%;
+}
+td.ant-descriptions-item-content span{
+    font-size: 16px;
+}
