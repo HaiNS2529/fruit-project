@@ -29,13 +29,14 @@ const Layout = (props) => {
   const renderItem = (item,key) =>{
     const srcImg = `./../assets/${item.icon}.svg`
     return (
-      <Link to={item.path} key={key}>
+
       <li 
         key={key} 
         className="left__menuItem" 
         //onClick={(event) => openMenu(event)}
         onClick={(item?.child?.length) ? (event) => openMenu(event) : () =>nextPage(item)}
         >
+      <Link to={item.path} key={key}>
       <div 
         className="left__title"
       >
@@ -62,8 +63,8 @@ const Layout = (props) => {
           )})}
         </div>
       }
+          </Link>
     </li>
-    </Link>
     )
   }
   return (

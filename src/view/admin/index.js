@@ -9,6 +9,7 @@ import Article from "./article";
 import Service from "./service";
 import Dashboard from "./dashboard";
 import Layout from "./layout";
+import Header from "../components/header";
 import "@assets/css/main.css";
 import "@assets/css/main.css.map"
 import { BrowserRouter, Switch, Route, Redirect, useLocation, Link } from "react-router-dom"

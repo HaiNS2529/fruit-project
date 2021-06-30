@@ -4,6 +4,7 @@ import React from 'react';
 import { Pie, Line } from 'react-chartjs-2';
 import { Button, DatePicker, Space } from "antd";
 import { useState, useEffect } from "react";
+import Header from "../../components/header";
 const Dashboard = () => {
 
   const [typeChart,setTypeChart] = useState(0);
@@ -71,7 +72,7 @@ const Dashboard = () => {
   return (
     <div className="right">
       <div className="right__content">
-        <div className="right__title">Bảng điều khiển</div>
+        <Header></Header>
         <div style={{background:"white", padding:"20px", borderRadius:"5px"}}>
         <p className="right__desc" style={{background:"white"}}>Bảng điều khiển</p>
         <div className="right__cards">

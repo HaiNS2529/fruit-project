@@ -54,6 +54,11 @@ const UpImages = (props) => {
             message.success(`${info.file.name} file uploaded successfully`);
           } else if (info.file.status === 'error') {
             message.error(`${info.file.name} file upload failed.`);
+            setState({
+                ...state,
+                imageUrl:"./../images/upLoadError.png",
+                loading:false,
+            })
           }
     };
     const uploadButton = () => {
@@ -72,7 +77,7 @@ const UpImages = (props) => {
                 listType="picture-card"
                 className="avatar-uploader"
                 showUploadList={false}
-                action="https://www.mocky.io/v2/5cc8019d300000980a055e76"
+                // action="https://www.mocky.io/v2/5cc8019d300000980a055e76"
                 beforeUpload={(e) => beforeUpload(e)}
                 onChange={(e) => handleChange(e)}
             >
